@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "438396112526",
+    "firebase_url": "https://obviouslyyy-d1813-default-rtdb.firebaseio.com",
+    "project_id": "obviouslyyy-d1813",
+    "storage_bucket": "obviouslyyy-d1813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438396112526:android:7ba711da9083e1a86ac3df",
+        "android_client_info": {
+          "package_name": "com.festil.obviouslyyy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438396112526-cgfnvicbsvn0jun99dl3retlj8lvenva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp4AMeqTyFUXwcpWuYe6vEhqMxI9Tehg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438396112526-cgfnvicbsvn0jun99dl3retlj8lvenva.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "438396112526-iq97uh8vcau91mq8ebvauaa3eg3uu627.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.festil.obviouslyyy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,11 +6,14 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
+    "facebookScheme": "fb353765716268201",
+    "facebookAppId": "353765716268201",
+    "facebookDisplayName": "Obviouslyyy",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f5c500"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -19,16 +22,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.festil.obviouslyyy",
+      "buildNumber": "1.0.0",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.438396112526-iq97uh8vcau91mq8ebvauaa3eg3uu627"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "package": "com.festil.obviouslyyy",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     }
   }
 }
