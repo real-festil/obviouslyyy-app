@@ -5,13 +5,14 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "backgroundColor": "#fff",
     "scheme": "myapp",
     "facebookScheme": "fb353765716268201",
     "facebookAppId": "353765716268201",
     "facebookDisplayName": "Obviouslyyy",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "https://raw.githubusercontent.com/real-festil/obviouslyyy-app/main/assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#f5c500"
     },

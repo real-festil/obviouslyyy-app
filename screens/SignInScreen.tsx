@@ -32,7 +32,7 @@ export default function SignInScreen({
 }: StackScreenProps<RootStackParamList, 'SignUp'>) {
   const [isLoading, setIsLoading] = React.useState(false);
   const provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().languageCode = `it`;
+  firebase.auth().languageCode = `en`;
 
   const onSubmit = ({ email, password }: any) => {
     setIsLoading(true);

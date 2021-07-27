@@ -5,13 +5,17 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import firebase from 'firebase/app';
 import * as GoogleSignIn from 'expo-google-sign-in';
 
-import useCachedResources from './hooks/useCachedResources';
+import * as SplashScreen from 'expo-splash-screen';
+import Constants from 'expo-constants';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
-import SplashScreen from './components/SplashScreen';
+import SplashScreenComponent from './components/SplashScreen';
+
+SplashScreen.preventAutoHideAsync().catch(() => {
+  /* reloading the app might trigger some race conditions, ignore them */
+});
 
 export default function App() {
-  const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
   GoogleSignIn.initAsync({
@@ -36,21 +40,17 @@ export default function App() {
     firebase.app();
   }
 
-  if (!isLoadingComplete) {
-    return null;
-  }
-
   return (
-    <SplashScreen
+    <SplashScreenComponent
       // eslint-disable-next-line global-require
-      image={require(`./assets/images/splash2.png`)}
+      image={{ uri: Constants.manifest.splash.image }}
       // eslint-disable-next-line global-require
       secondImage={require(`./assets/images/splash2.png`)}
     >
-      <SafeAreaProvider>
+      <SafeAreaProvider style={{ backgroundColor: `#fff` }}>
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
       </SafeAreaProvider>
-    </SplashScreen>
+    </SplashScreenComponent>
   );
 }
